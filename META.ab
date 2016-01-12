@@ -1,0 +1,8 @@
+version = "$(pkg_version)"
+description = "Standard Jane Street ppx rewriters"
+requires = "ppx_assert ppx_bench ppx_bin_prot ppx_compare ppx_custom_printf ppx_enumerate ppx_expect ppx_fail ppx_fields_conv ppx_here ppx_inline_test ppx_let ppx_pipebang ppx_sexp_conv ppx_sexp_message ppx_sexp_value ppx_type_conv ppx_typerep_conv ppx_variants_conv"
+archive(ppx_driver, byte          ) = "ppx_jane.cma"
+archive(ppx_driver, native        ) = "ppx_jane.cmxa"
+archive(ppx_driver, native, plugin) = "ppx_jane.cmxs"
+exists_if = "ppx_jane.cma"
+ppx(-ppx_driver) = "./ppx"
