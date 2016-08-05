@@ -1,0 +1,13 @@
+(executables
+ ((names (main))
+  (public_release ((build_and_install ((main ppx-jane)))))
+  (libraries (ocamlcommon ppx_jane ppx_driver))
+  (link_flags (-linkall))
+  (preprocess ((no_preprocessing All)))))
+
+(alias
+ ((name .runtest)
+  (deps (main.exe ../../../.ppx/JANE/ppx.exe))
+  (action "patdiff <(./main.exe -print-transformations 2>&1 | sort) \
+ <(../../../.ppx/JANE/ppx.exe -print-transformations 2>&1 | grep -v '^ppx_js_style$' | sort)
+")))
