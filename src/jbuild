@@ -1,28 +1,7 @@
-;; This is currently only used for the public release. It is used in
-;; place of JANE.
-
 (library
  ((name ppx_jane)
-  (wrapped false)
   (public_name ppx_jane)
-  (libraries (ppx_assert
-              ppx_bench
-              ppx_bin_prot
-              ppx_compare
-              ppx_custom_printf
-              ppx_enumerate
-              ppx_expect
-              ppx_fail
-              ppx_fields_conv
-              ppx_hash
-              ppx_here
-              ppx_inline_test
-              ppx_let
-              ppx_pipebang
-              ppx_sexp_conv
-              ppx_sexp_message
-              ppx_sexp_value
-              ppx_typerep_conv
-              ppx_variants_conv
-              ))
-  (preprocess ((no_preprocessing All)))))
+  (libraries
+   (ppx_jane_kernel
+    ppx_expect))
+  (preprocess no_preprocessing)))

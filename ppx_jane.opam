@@ -6,34 +6,33 @@ bug-reports: "https://github.com/janestreet/ppx_jane/issues"
 dev-repo: "https://github.com/janestreet/ppx_jane.git"
 license: "Apache-2.0"
 build: [
-  ["./configure" "--prefix" prefix]
-  [make]
+  ["jbuilder" "build-package" "ppx_jane" "-j" jobs]
 ]
 depends: [
-  "ocamlbuild"        {build}
-  "oasis"             {build & >= "0.4"}
-  "ocamlfind"         {build & >= "1.3.2"}
-  "js-build-tools"    {build}
+  "jbuilder"
   "ppx_assert"
+  "ppx_base"
   "ppx_bench"
   "ppx_bin_prot"
-  "ppx_compare"
   "ppx_custom_printf"
   "ppx_driver"
-  "ppx_enumerate"
   "ppx_expect"
   "ppx_fail"
   "ppx_fields_conv"
-  "ppx_hash"
   "ppx_here"
   "ppx_inline_test"
   "ppx_let"
+  "ppx_optional"
   "ppx_pipebang"
-  "ppx_sexp_conv"
   "ppx_sexp_message"
   "ppx_sexp_value"
   "ppx_typerep_conv"
   "ppx_variants_conv"
 ]
 available: [ ocaml-version >= "4.03.0" ]
-conflicts: [ "oasis" {= "0.4.7"} ]
+descr: "
+Standard Jane Street ppx rewriters
+
+This package installs a ppx-jane executable, which is a ppx driver
+including all standard Jane Street ppx rewriters.
+"
