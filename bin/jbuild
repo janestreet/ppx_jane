@@ -1,6 +1,6 @@
 (executables
  ((names (main))
-  (libraries (compiler-libs.common ppx_jane ppx_driver))
+  (libraries (ppx_jane ppx_driver))
   (link_flags (-linkall))
   (preprocess no_preprocessing)))
 
