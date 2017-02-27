@@ -21,3 +21,5 @@
     ppx_variants_conv
     ))
   (preprocess no_preprocessing)))
+
+(jbuild_version jane_street)

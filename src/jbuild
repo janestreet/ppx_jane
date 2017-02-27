@@ -6,3 +6,5 @@
    (ppx_jane_kernel
     ppx_expect))
   (preprocess no_preprocessing)))
+
+(jbuild_version jane_street)
