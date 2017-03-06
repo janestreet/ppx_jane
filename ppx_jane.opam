@@ -9,7 +9,7 @@ build: [
   ["jbuilder" "build" "--only-packages" "ppx_jane" "--root" "." "-j" jobs "@install"]
 ]
 depends: [
-  "jbuilder"
+  "jbuilder"                {build}
   "ppx_assert"
   "ppx_base"
   "ppx_bench"
@@ -28,6 +28,7 @@ depends: [
   "ppx_sexp_value"
   "ppx_typerep_conv"
   "ppx_variants_conv"
+  "ocaml-migrate-parsetree"
 ]
 available: [ ocaml-version >= "4.03.0" ]
 descr: "

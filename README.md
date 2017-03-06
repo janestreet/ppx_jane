@@ -1,5 +1,7 @@
-Standard Jane Street ppx rewriters
-==================================
+---
+title: Standard Jane Street ppx rewriters
+parent: ../README.md
+---
 
 ppx\_jane is a [ppx_driver](https://github.com/janestreet/ppx_driver)
 including all standard ppx rewriters.
