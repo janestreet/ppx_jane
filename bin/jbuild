@@ -4,7 +4,6 @@
   (link_flags (-linkall))
   (preprocess no_preprocessing)))
 
-(provides (ppx-jane (file main.exe)))
 
 (install
  ((section bin)
