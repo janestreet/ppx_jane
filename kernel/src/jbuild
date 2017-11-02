@@ -2,6 +2,7 @@
  ((name        ppx_jane_kernel)
   (public_name ppx_jane.kernel)
   (kind ppx_rewriter)
+  (flags (:standard -safe-string))
   (libraries
    (ppx_base
     ppx_assert

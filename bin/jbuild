@@ -1,5 +1,6 @@
 (executables
  ((names (main))
+  (flags (:standard -safe-string))
   (libraries (ppx_jane ppx_driver))
   (link_flags (-linkall))
   (preprocess no_preprocessing)))
