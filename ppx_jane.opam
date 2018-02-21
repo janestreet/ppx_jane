@@ -22,7 +22,6 @@ depends: [
   "ppx_inline_test"
   "ppx_let"
   "ppx_optcomp"
-  "ppx_optcomp_old"
   "ppx_optional"
   "ppx_pipebang"
   "ppx_sexp_message"

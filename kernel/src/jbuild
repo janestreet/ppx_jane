@@ -16,7 +16,6 @@
     ppx_let
     ppx_optional
     ppx_optcomp
-    ppx_optcomp_old
     ppx_pipebang
     ppx_sexp_message
     ppx_sexp_value
