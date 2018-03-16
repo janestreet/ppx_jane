@@ -14,7 +14,6 @@ depends: [
   "ppx_bench"
   "ppx_bin_prot"
   "ppx_custom_printf"
-  "ppx_driver"
   "ppx_expect"
   "ppx_fail"
   "ppx_fields_conv"
@@ -28,8 +27,9 @@ depends: [
   "ppx_sexp_value"
   "ppx_typerep_conv"
   "ppx_variants_conv"
-  "jbuilder"                {build & >= "1.0+beta12"}
+  "jbuilder"                {build & >= "1.0+beta18.1"}
   "ocaml-migrate-parsetree" {>= "1.0"}
+  "ppxlib"                  {>= "0.1.1"}
 ]
 available: [ ocaml-version >= "4.04.1" ]
 descr: "
