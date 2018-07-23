@@ -4,7 +4,8 @@
   (kind ppx_rewriter)
   (libraries
    (ppx_jane_kernel
-    ppx_expect))
+    ppx_expect
+    base_quickcheck.ppx_quickcheck))
   (preprocess no_preprocessing)))
 
 (jbuild_version 1)

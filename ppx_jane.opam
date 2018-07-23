@@ -9,6 +9,7 @@ build: [
   ["jbuilder" "build" "-p" name "-j" jobs]
 ]
 depends: [
+  "base_quickcheck"
   "ppx_assert"
   "ppx_base"
   "ppx_bench"
