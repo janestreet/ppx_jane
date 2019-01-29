@@ -29,6 +29,7 @@ depends: [
   "ppx_pipebang"
   "ppx_sexp_message"
   "ppx_sexp_value"
+  "ppx_stable"
   "ppx_typerep_conv"
   "ppx_variants_conv"
   "dune"              {build & >= "1.5.1"}
