@@ -20,6 +20,7 @@ depends: [
   "ppx_expect"
   "ppx_fail"
   "ppx_fields_conv"
+  "ppx_fixed_literal"
   "ppx_here"
   "ppx_inline_test"
   "ppx_let"
