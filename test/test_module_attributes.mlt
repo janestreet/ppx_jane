@@ -6,8 +6,12 @@
 
 let _ = Ppx_jane_test_alert_in_ml.x
 
-[%%expect {| |}]
-
+[%%expect
+  {|
+Line _, characters _-_:
+Alert implementation: module Ppx_jane_test_alert_in_ml
+This structure contains an alert.
+|}]
 
 let _ = Ppx_jane_test_alert_in_mli.x
 

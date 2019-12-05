@@ -1,3 +1,4 @@
+[@@@alert implementation "This structure contains an alert."]
 let () =
   Ppx_module_timer_runtime.record_start Ppx_module_timer_runtime.__MODULE__
 let () =
@@ -9,7 +10,6 @@ let () =
 let () =
   Ppx_inline_test_lib.Runtime.set_lib_and_partition
     "ppx_jane_test_alert_in_ml" "ppx_jane_test_alert_in_ml"
-[@@@alert implementation "This structure contains an alert."]
 let x = 0
 let () = Ppx_inline_test_lib.Runtime.unset_lib "ppx_jane_test_alert_in_ml"
 let () = Expect_test_collector.Current_file.unset ()
