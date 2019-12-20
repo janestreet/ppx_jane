@@ -9,7 +9,7 @@ let _ = Ppx_jane_test_alert_in_ml.x
 [%%expect
   {|
 Line _, characters _-_:
-Alert implementation: module Ppx_jane_test_alert_in_ml
+Error (alert implementation): module Ppx_jane_test_alert_in_ml
 This structure contains an alert.
 |}]
 
@@ -18,6 +18,6 @@ let _ = Ppx_jane_test_alert_in_mli.x
 [%%expect
   {|
 Line _, characters _-_:
-Alert interface: module Ppx_jane_test_alert_in_mli
+Error (alert interface): module Ppx_jane_test_alert_in_mli
 This signature contains an alert.
 |}]
