@@ -18,7 +18,6 @@ depends: [
   "ppx_bin_prot"
   "ppx_custom_printf"
   "ppx_expect"
-  "ppx_fail"
   "ppx_fields_conv"
   "ppx_fixed_literal"
   "ppx_here"
