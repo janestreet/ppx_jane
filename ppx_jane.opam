@@ -17,6 +17,7 @@ depends: [
   "ppx_bench"
   "ppx_bin_prot"
   "ppx_custom_printf"
+  "ppx_disable_unused_warnings"
   "ppx_expect"
   "ppx_fields_conv"
   "ppx_fixed_literal"
@@ -33,8 +34,8 @@ depends: [
   "ppx_string"
   "ppx_typerep_conv"
   "ppx_variants_conv"
-  "dune"              {>= "2.0.0"}
-  "ppxlib"            {>= "0.11.0"}
+  "dune"                        {>= "2.0.0"}
+  "ppxlib"                      {>= "0.11.0"}
 ]
 synopsis: "Standard Jane Street ppx rewriters"
 description: "
