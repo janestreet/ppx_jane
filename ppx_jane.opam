@@ -22,6 +22,7 @@ depends: [
   "ppx_fields_conv"
   "ppx_fixed_literal"
   "ppx_here"
+  "ppx_ignore_instrumentation"
   "ppx_inline_test"
   "ppx_let"
   "ppx_module_timer"
