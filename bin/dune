@@ -1,4 +1,11 @@
-(executables (names main) (libraries ppx_jane ppxlib) (link_flags -linkall)
+(executables
+ (modes byte exe)
+ (names main)
+ (libraries ppx_jane ppxlib)
+ (link_flags -linkall)
  (preprocess no_preprocessing))
 
-(install (section bin) (files (main.exe as ppx-jane)))
+(install
+ (section bin)
+ (files
+  (main.exe as ppx-jane)))
