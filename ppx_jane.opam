@@ -34,6 +34,7 @@ depends: [
   "ppx_stable"
   "ppx_stable_witness"
   "ppx_string"
+  "ppx_string_conv"
   "ppx_tydi"
   "ppx_typerep_conv"
   "ppx_variants_conv"
