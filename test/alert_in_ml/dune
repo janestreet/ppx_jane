@@ -4,7 +4,7 @@
   (pps ppx_jane)))
 
 (alias
- (name DEFAULT)
+ (name default)
  (deps ppx_jane_test_alert_in_ml_ml_pp.output))
 
 (rule
