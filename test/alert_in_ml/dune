@@ -1,14 +1,11 @@
 (library
  (name ppx_jane_test_alert_in_ml)
  (preprocess
-  (pps ppx_jane)))
-
-(alias
- (name default)
- (deps ppx_jane_test_alert_in_ml_ml_pp.output))
+  (pps ppx_jane -compare-require-explicit-locality)))
 
 (rule
  (targets ppx_jane_test_alert_in_ml_ml_pp.output)
+ (alias default)
  (deps
   (:first_dep ppx_jane_test_alert_in_ml.ml.pp))
  (action
