@@ -1,7 +1,7 @@
 Standard Jane Street ppx rewriters
 ==================================
 
-ppx\_jane is a [ppx_driver](https://github.com/janestreet/ppx_driver)
+ppx\_jane is a set of preprocessors based on [ppxlib](https://github.com/ocaml-ppx/ppxlib)
 including all standard ppx rewriters.
 
 Using ppx\_jane in the toplevel
