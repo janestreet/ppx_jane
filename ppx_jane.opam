@@ -46,9 +46,12 @@ depends: [
   "ppx_var_name"
   "ppx_variants_conv"
   "dune"                        {>= "3.17.0"}
-  "ppxlib"                      {= "0.33.0+ox"}
+  "ppxlib"                      {>= "0.33.0" & < "0.36.0"}
 ]
 available: arch != "x86_32"
+conflicts: [
+  "oxcaml-compiler" {< "5.2.0minus39"}
+]
 synopsis: "Standard Jane Street ppx rewriters"
 description: "
 This package installs a ppx-jane executable, which is a ppx driver
