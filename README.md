@@ -1,5 +1,4 @@
-Standard Jane Street ppx rewriters
-==================================
+# Standard Jane Street ppx rewriters
 
 ppx\_jane is a set of preprocessors based on [ppxlib](https://github.com/ocaml-ppx/ppxlib)
 including all standard ppx rewriters.
