@@ -5,8 +5,8 @@
 
 (rule
  (targets ppx_jane_test_alert_in_mli_mli_pp.output)
+ (deps ppx_jane_test_alert_in_mli.mli.pp)
  (alias default)
- (deps
-  (:first_dep ppx_jane_test_alert_in_mli.mli.pp))
  (action
-  (bash "cp %{first_dep} %{targets}")))
+  (copy ppx_jane_test_alert_in_mli.mli.pp
+    ppx_jane_test_alert_in_mli_mli_pp.output)))
